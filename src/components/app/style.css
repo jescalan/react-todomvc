@@ -1,0 +1,94 @@
+#page-info {
+  margin: 65px auto 0;
+  color: #bfbfbf;
+  font-size: 10px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-align: center;
+
+  & p {
+    line-height: 1;
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+
+  & h1 {
+    width: 100%;
+    height: 130px;
+    line-height: 130px;
+    margin: 0;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(175, 47, 47, 0.15);
+  }
+
+  & .todo-app {
+    background: #fff;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+
+    & label.indicator {
+      position: absolute;
+      top: 14px;
+      left: -8px;
+      font-size: 22px;
+      color: #e6e6e6;
+      padding: 10px 27px 10px 27px;
+    }
+
+    & input {
+      position: relative;
+      margin: 0;
+      width: 100%;
+      font-size: 24px;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: 1.4em;
+      color: inherit;
+      padding: 16px 16px 16px 60px;
+      border: none;
+      background: rgba(0, 0, 0, 0.003);
+      box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+    }
+
+    & input::-webkit-input-placeholder {
+      font-style: italic;
+      font-weight: 300;
+      color: #e6e6e6;
+    }
+
+    & input::-moz-placeholder {
+      font-style: italic;
+      font-weight: 300;
+      color: #e6e6e6;
+    }
+
+    & input::input-placeholder {
+      font-style: italic;
+      font-weight: 300;
+      color: #e6e6e6;
+    }
+
+    & ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      & li {
+        border-bottom: 1px solid #ededed;
+      }
+
+      & li:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

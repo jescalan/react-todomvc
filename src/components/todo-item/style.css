@@ -1,0 +1,68 @@
+.component-item {
+  position: relative;
+  font-size: 24px;
+
+  & label {
+    word-break: break-all;
+    padding: 15px;
+    display: block;
+    line-height: 1.2;
+    transition: color 0.4s;
+  }
+
+  & label.completed {
+    color: #d9d9d9;
+    text-decoration: line-through;
+  }
+
+  & label.time {
+    margin-left: 2em;
+    font-size: 50%;
+    color: #737373;
+  }
+
+  & button.destroy {
+    visibility: hidden;
+    width: 30px;
+    height: 40px;
+    margin: auto 0;
+    font-size: 30px;
+    text-align: left;
+    color: #cc9a9a;
+    transition: color 0.2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      color: #af5b5e;
+    }
+  }
+
+  &:hover {
+    & button.destroy {
+      visibility: visible;
+    }
+  }
+
+  & .container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.component-item-editing {
+  display: block;
+  width: calc(100% - 42px);
+  padding: 12px 15px;
+  margin: 0 0 0 40px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #4d4d4d;
+  border: 1px solid #999;
+  box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+}
