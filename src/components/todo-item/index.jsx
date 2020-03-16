@@ -1,7 +1,8 @@
+import './style.css'
 import React from 'react'
 import { format } from 'date-fns'
-import Checkbox from './components/Checkbox'
-import { KeyCode } from './utils/constants'
+import Checkbox from '../checkbox'
+import { KeyCode } from '../../utils/constants'
 
 class TodoItem extends React.Component {
   state = {

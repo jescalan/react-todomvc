@@ -1,3 +1,4 @@
+import './style.css'
 import React from 'react'
 
 function Footer({ filter, itemCount }) {

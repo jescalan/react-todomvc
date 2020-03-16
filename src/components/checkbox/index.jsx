@@ -1,11 +1,12 @@
+import './style.css'
 import React from 'react'
 
 export default function Checkbox({ checked, onToggle }) {
   return (
-    <Input
+    <input
       type='checkbox'
       checked={checked || false}
-      className={checked ? 'checked' : ''}
+      className={`component-checkbox${checked ? ' checked' : ''}`}
       onChange={onToggle}
     />
   )
