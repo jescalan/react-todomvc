@@ -15,7 +15,7 @@ export default function App() {
   const [items, setItems] = useState([])
 
   function loadItems(_filter) {
-    if (typeof _filter === undefined) return setItems(TODOS.filter(filter))
+    if (typeof _filter === 'undefined') return setItems(TODOS.filter(filter))
 
     setFilter(_filter)
     setItems(TODOS.filter(_filter))
