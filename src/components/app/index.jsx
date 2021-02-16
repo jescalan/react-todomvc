@@ -23,14 +23,14 @@ export default function App() {
   }
 
   function inputText(event) {
-    setNewTodo(event.target.value.trim())
+    setNewTodo(event.target.value)
   }
 
   function newTodoKeyDown(event) {
     if (event.keyCode === KeyCode.Enter) {
       event.preventDefault()
-      if (newTodo.length) {
-        TODOS.add(newTodo)
+      if (newTodo.trim().length) {
+        TODOS.add(newTodo.trim())
         setNewTodo('')
         const applyFilter = filter === 'completed' ? 'active' : filter
         loadItems(applyFilter)

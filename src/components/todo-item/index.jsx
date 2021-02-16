@@ -20,12 +20,12 @@ export default function TodoItem({
   }
 
   function inputText(event) {
-    setEditText(event.target.value.trim())
+    setEditText(event.target.value)
   }
 
   function submitText() {
     if (editText) {
-      onUpdate(editText)
+      onUpdate(editText.trim())
       setEditing(false)
     } else {
       onDestroy()
